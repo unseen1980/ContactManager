@@ -1,0 +1,36 @@
+		<section ng-init='getContact()'>
+			<section class='wrapper'>
+				<div class="row mt">
+					<div class="col-md-8 col-md-offset-2">
+						<div class="content-panel">
+							<table class="table table-striped table-advance table-hover">
+								<h4><i class="fa fa-angle-right"></i> Επαφη</h4>
+								<hr>
+								<thead>
+									<tr>
+										<th><i class="fa "></i> Όνομα</th>
+										<th><i class="fa "></i> Επώνυμο</th>
+										<th><i class="fa "></i> Διεύθυνση</th>
+										<th><i class="fa "></i> Πόλη</th>
+										<th><i class="fa "></i> Τ.Κ.</th>
+										<th><i class="fa "></i> Τηλεφωνο</th>
+										<th><i class="fa "></i> Email</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>{{contact.contact.fName}}</td>
+										<td>{{contact.contact.lName}}</td>
+										<td>{{contact.contact.address}}</td>
+										<td>{{contact.contact.city}}</td>
+										<td>{{contact.contact.postcode}}</td>
+										<td>{{contact.contact.tel}}</td>
+										<td>{{contact.contact.email}}</td>
+									</tr>
+								</tbody>
+							</table>
+						</div><!-- /content-panel -->
+					</div><!-- /col-md-12 -->
+				</div><!-- /row -->
+			</section>
+		</section>

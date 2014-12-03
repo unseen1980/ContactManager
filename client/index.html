@@ -1,0 +1,26 @@
+﻿<html ng-app='cmApp'>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Customer Management</title>
+	<script type="text/javascript" src="bower_components/angularjs/angular.min.js"></script>
+	<script type="text/javascript" src="bower_components/angular-resource/angular-resource.min.js"></script>
+	<script type="text/javascript" src="http://angular-ui.github.io/ui-router/release/angular-ui-router.min.js"></script>
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/cmApp.js"></script>
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style-responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.css">
+</head>
+<body>
+	<section id='container'>
+		<header class="header black-bg">
+			<!--logo start-->
+			<a href="index.html" class="logo"><b>Διαχειρηση Επαφων</b></a>
+			<!--logo end-->
+		</header>
+		<div ui-view></div>
+	</section>
+</body>
+</html>

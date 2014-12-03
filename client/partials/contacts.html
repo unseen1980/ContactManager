@@ -1,0 +1,45 @@
+		<section>
+			<section class='wrapper'>
+				<div class="row mt">
+					<div class="col-md-8 col-md-offset-2">
+						<div class="content-panel">
+							<table class="table table-striped table-advance table-hover">
+								<h4><i class="fa fa-angle-right"></i> Επαφές</h4>
+								<hr>
+								<thead>
+									<tr>
+										<th><i class="fa "></i> Ονομα</th>
+										<th><i class="fa "></i> Επώνυμο</th>
+										<th><i class="fa "></i> Διεύθυνση</th>
+										<th><i class="fa "></i> Πόλη</th>
+										<th><i class="fa "></i> Τ.Κ.</th>
+										<th><i class="fa "></i> Τηλεφωνο</th>
+										<th><i class="fa "></i> Email</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr ng-repeat='c in contacts'>
+										<td>{{c.contact.fName}}</td>
+										<td>{{c.contact.lName}}</td>
+										<td>{{c.contact.address}}</td>
+										<td>{{c.contact.city}}</td>
+										<td>{{c.contact.postcode}}</td>
+										<td>{{c.contact.tel}}</td>
+										<td>{{c.contact.email}}</td>
+										<td>
+											<button class="btn btn-success btn-xs" ui-sref="viewContact({id:c.id})"><i class="fa fa-check"></i></button>
+											<button class="btn btn-primary btn-xs" ui-sref="editContact({id:c.id})"><i class="fa fa-pencil"></i></button>
+											<button class="btn btn-danger btn-xs" ng-click='deleteContact(c)'><i class="fa fa-trash-o "></i></button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div style='text-align:center;'>
+							    <button class="btn btn-large btn-primary" ui-sref='newContact()'>Νέα επαφή</button>
+							</div>
+						</div><!-- /content-panel -->
+					</div><!-- /col-md-12 -->
+				</div><!-- /row -->
+			</section>
+		</section>
