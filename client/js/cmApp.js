@@ -1,7 +1,7 @@
 var cmApp = angular.module('cmApp',['ui.router','ngResource']);
 
 cmApp.factory('Contacts',function($resource){
-	return $resource('https://lean-unseen1980-2.c9.io/api/contacts/:id',{id:'@id'},{
+	return $resource('http://localhost:8080/api/contacts/:id',{id:'@id'},{
         update: {
             method: 'PUT'
         }
