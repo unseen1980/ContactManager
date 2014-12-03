@@ -16,7 +16,7 @@ Installation
 
 *In a separate console go to ContactManager/client and run 'python -m SimpleHTTPServer'
 
-*Open chrome with cors enabled and got to http://localhost:8000. Alternatively you can 
+*Open chrome with cors enabled and go to http://localhost:8000. Alternatively you can 
 host your api in c9.io website or similar
 
 Enjoy
